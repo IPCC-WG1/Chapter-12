@@ -1,0 +1,5 @@
+['ICHEC-EC-EARTH', 'SMHI-RCA4', 'r12i1p1']
+['MIROC-MIROC5', 'SMHI-RCA4', 'r1i1p1']
+['MOHC-HadGEM2-ES', 'SMHI-RCA4', 'r1i1p1']
+['MPI-M-MPI-ESM-LR', 'SMHI-RCA4', 'r1i1p1']
+['NCC-NorESM1-M', 'SMHI-RCA4', 'r1i1p1']

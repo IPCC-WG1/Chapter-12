@@ -1,0 +1,5 @@
+['CCCma-CanESM2', 'SMHI-RCA4', 'r1i1p1']
+['CCCma-CanESM2', 'UQAM-CRCM5', 'r1i1p1']
+['ICHEC-EC-EARTH', 'DMI-HIRHAM5', 'r3i1p1']
+['ICHEC-EC-EARTH', 'SMHI-RCA4', 'r12i1p1']
+['MPI-M-MPI-ESM-LR', 'UQAM-CRCM5', 'r1i1p1']

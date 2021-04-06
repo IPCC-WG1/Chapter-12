@@ -1,0 +1,1 @@
+['ICHEC-EC-EARTH', 'SMHI-RCA4', 'r12i1p1']

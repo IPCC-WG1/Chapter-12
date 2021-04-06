@@ -1,0 +1,5 @@
+['CNRM-CERFACS-CNRM-CM5', 'CLMcom-CCLM5-0-2', 'r1i1p1']
+['ICHEC-EC-EARTH', 'CLMcom-CCLM5-0-2', 'r12i1p1']
+['ICHEC-EC-EARTH', 'DMI-HIRHAM5', 'r3i1p1']
+['MOHC-HadGEM2-ES', 'CLMcom-CCLM5-0-2', 'r1i1p1']
+['MPI-M-MPI-ESM-LR', 'CLMcom-CCLM5-0-2', 'r1i1p1']
