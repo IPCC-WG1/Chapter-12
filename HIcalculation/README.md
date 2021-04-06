@@ -8,3 +8,12 @@ The files are structured as follows:
 3) EXE2_Prepare_data_for_IPCC.ipynb: This file prepares the final files containing the threshold exceedances above 27 degC, 32 degC, and 41 degC for CMIP5, CMIP6, and the CORDEX regions to be used for plotting Figure 12.4 and Figure SM 12.2 in IPCC AR6 WG1. A single NetCDF file is produced For every model, every time period, every scenario, and every threshold.
 
 The functions that are used be the different scripts can be found in the subfolder "functions"
+
+The calculations have been performed using Python 3.7.3 with the following packages:
+- numpy: version 1.17.2
+- yaml: version 5.1.2
+- cftime: version 1.0.3.4
+- feather: version 0.4.0
+- xarray: version 0.15.1
+- dask: 2.6.0
+- rpy2: 2.9.1
