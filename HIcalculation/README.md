@@ -1,4 +1,4 @@
-# Chapter 12
+# Calculation of NOAA heat index (HI)
 
 The files in this repository contain the scripts that were used to calculate NOAA heat index (HI), which is shown in IPCC Figure 12.4 and Figure SM 12.2.
 
