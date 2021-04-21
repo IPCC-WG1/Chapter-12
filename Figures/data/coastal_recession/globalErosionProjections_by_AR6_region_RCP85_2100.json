@@ -1,0 +1,465 @@
+{
+    "ARO": {
+        "domain": "Ocean", 
+        "long_name": "Arctic-Ocean", 
+        "region": "ARCTIC"
+    }, 
+    "ARP": {
+        "domain": "Land", 
+        "long_name": "Arabian-Peninsula", 
+        "median": -140.88063157184337, 
+        "q5": -337.4242206354297, 
+        "q95": -18.65973196025277, 
+        "region": "ASIA"
+    }, 
+    "ARS": {
+        "domain": "Ocean", 
+        "long_name": "Arabian-Sea", 
+        "median": 0.9191127617602415, 
+        "q5": -48.021915773899856, 
+        "q95": 26.023297731411215, 
+        "region": "INDIAN"
+    }, 
+    "BOB": {
+        "domain": "Ocean", 
+        "long_name": "Bay-of-Bengal", 
+        "median": -85.48621217708333, 
+        "q5": -279.6720309479167, 
+        "q95": -0.5969787750000023, 
+        "region": "INDIAN"
+    }, 
+    "CAF": {
+        "domain": "Land", 
+        "long_name": "Central-Africa", 
+        "median": -176.9554025837104, 
+        "q5": -455.5927615497738, 
+        "q95": -9.45694935030166, 
+        "region": "AFRICA"
+    }, 
+    "CAR": {
+        "domain": "Land-Ocean", 
+        "long_name": "Caribbean", 
+        "median": -202.3400536366797, 
+        "q5": -374.5155102241211, 
+        "q95": -100.3667620902871, 
+        "region": "CENTRAL-AMERICA"
+    }, 
+    "CAU": {
+        "domain": "Land", 
+        "long_name": "C.Australia", 
+        "median": -222.6700066565706, 
+        "q5": -482.52476449568474, 
+        "q95": -101.93758385832925, 
+        "region": "OCEANIA"
+    }, 
+    "CNA": {
+        "domain": "Land", 
+        "long_name": "C.North-America", 
+        "median": -328.64099611406846, 
+        "q5": -642.3469406844106, 
+        "q95": -162.88835607604562, 
+        "region": "NORTH-AMERICA"
+    }, 
+    "EAN": {
+        "domain": "Land", 
+        "long_name": "E.Antarctica", 
+        "region": "POLAR"
+    }, 
+    "EAO": {
+        "domain": "Ocean", 
+        "long_name": "Equatorial.Atlantic-Ocean", 
+        "median": -108.29543749999999, 
+        "q5": -482.6001375, 
+        "q95": 171.59375, 
+        "region": "ATLANTIC"
+    }, 
+    "EAS": {
+        "domain": "Land", 
+        "long_name": "E.Asia", 
+        "median": -84.32097376671497, 
+        "q5": -298.68342136624625, 
+        "q95": 33.40973157834808, 
+        "region": "ASIA"
+    }, 
+    "EAU": {
+        "domain": "Land", 
+        "long_name": "E.Australia", 
+        "median": -166.69611565252043, 
+        "q5": -431.185854391313, 
+        "q95": -17.52037711456465, 
+        "region": "OCEANIA"
+    }, 
+    "ECA": {
+        "domain": "Land", 
+        "long_name": "E.C.Asia", 
+        "region": "ASIA"
+    }, 
+    "EEU": {
+        "domain": "Land", 
+        "long_name": "E.Europe", 
+        "median": -302.3557164884135, 
+        "q5": -398.05358538324424, 
+        "q95": -260.1555268270945, 
+        "region": "EUROPE"
+    }, 
+    "EIO": {
+        "domain": "Ocean", 
+        "long_name": "Equatorial.Indic-Ocean", 
+        "median": -67.2028241197822, 
+        "q5": -210.34231263157895, 
+        "q95": -5.081467785843919, 
+        "region": "INDIAN"
+    }, 
+    "ENA": {
+        "domain": "Land", 
+        "long_name": "E.North-America", 
+        "median": -132.50413178433877, 
+        "q5": -343.43872662914384, 
+        "q95": -27.743837598783266, 
+        "region": "NORTH-AMERICA"
+    }, 
+    "EPO": {
+        "domain": "Ocean", 
+        "long_name": "Equatorial.Pacific-Ocean", 
+        "median": -126.34504794642855, 
+        "q5": -239.79523049107144, 
+        "q95": -74.84154276785715, 
+        "region": "PACIFIC"
+    }, 
+    "EPO*": {
+        "domain": "Ocean", 
+        "long_name": "Equatorial.Pacific-Ocean", 
+        "median": -100.93768282771536, 
+        "q5": -221.7282211142322, 
+        "q95": 4.788655170411985, 
+        "region": "PACIFIC"
+    }, 
+    "ESAF": {
+        "domain": "Land", 
+        "long_name": "E.Southern-Africa", 
+        "median": -110.69731971916214, 
+        "q5": -450.079895490044, 
+        "q95": 150.50275165865014, 
+        "region": "AFRICA"
+    }, 
+    "ESB": {
+        "domain": "Land", 
+        "long_name": "E.Siberia", 
+        "region": "ASIA"
+    }, 
+    "GIC": {
+        "domain": "Land", 
+        "long_name": "Greenland/Iceland", 
+        "region": "POLAR"
+    }, 
+    "MDG": {
+        "domain": "Land", 
+        "long_name": "Madagascar", 
+        "median": -120.94579574966711, 
+        "q5": -342.31473900872913, 
+        "q95": 0.21667143558218505, 
+        "region": "AFRICA"
+    }, 
+    "MED": {
+        "domain": "Land-Ocean", 
+        "long_name": "Mediterranean", 
+        "median": -85.58481998227987, 
+        "q5": -215.6503552630171, 
+        "q95": -21.380031529158146, 
+        "region": "EUROPE-AFRICA"
+    }, 
+    "NAO": {
+        "domain": "Ocean", 
+        "long_name": "N.Atlantic-Ocean", 
+        "median": -38.90947728974855, 
+        "q5": -127.47542276827853, 
+        "q95": 3.441389883558995, 
+        "region": "ATLANTIC"
+    }, 
+    "NAU": {
+        "domain": "Land", 
+        "long_name": "N.Australia", 
+        "median": -218.8156482978961, 
+        "q5": -1230.2373383136094, 
+        "q95": 655.3008012665156, 
+        "region": "OCEANIA"
+    }, 
+    "NCA": {
+        "domain": "Land", 
+        "long_name": "N.Central-America", 
+        "median": -134.48219806980887, 
+        "q5": -290.1017179216106, 
+        "q95": -54.25741211440873, 
+        "region": "CENTRAL-AMERICA"
+    }, 
+    "NEAF": {
+        "domain": "Land", 
+        "long_name": "N.Eastern-Africa", 
+        "median": -95.70403618180325, 
+        "q5": -228.97127662259814, 
+        "q95": -28.469717921891938, 
+        "region": "AFRICA"
+    }, 
+    "NEN": {
+        "domain": "Land", 
+        "long_name": "N.E.North-America", 
+        "median": -88.64753482745917, 
+        "q5": -260.6440647885621, 
+        "q95": -8.791312816495227, 
+        "region": "NORTH-AMERICA"
+    }, 
+    "NES": {
+        "domain": "Land", 
+        "long_name": "N.E.South-America", 
+        "median": -149.35409504450226, 
+        "q5": -431.16933947966595, 
+        "q95": 14.268564172942616, 
+        "region": "SOUTH-AMERICA"
+    }, 
+    "NEU": {
+        "domain": "Land", 
+        "long_name": "N.Europe", 
+        "median": -102.40437941175571, 
+        "q5": -326.4880844482144, 
+        "q95": 23.2042208681838, 
+        "region": "EUROPE"
+    }, 
+    "NPO": {
+        "domain": "Ocean", 
+        "long_name": "N.Pacific-Ocean", 
+        "median": -47.38094084905661, 
+        "q5": -111.07013113207546, 
+        "q95": -19.355984613207546, 
+        "region": "PACIFIC"
+    }, 
+    "NPO*": {
+        "domain": "Ocean", 
+        "long_name": "N.Pacific-Ocean", 
+        "median": -50.85601827629912, 
+        "q5": -117.52167983016476, 
+        "q95": -20.243864030418248, 
+        "region": "PACIFIC"
+    }, 
+    "NSA": {
+        "domain": "Land", 
+        "long_name": "N.South-America", 
+        "median": -100.83046277777777, 
+        "q5": -326.03497443186, 
+        "q95": 31.58636868078576, 
+        "region": "SOUTH-AMERICA"
+    }, 
+    "NWN": {
+        "domain": "Land", 
+        "long_name": "N.W.North-America", 
+        "median": -158.89556457007126, 
+        "q5": -337.1470758099763, 
+        "q95": -76.51808587814726, 
+        "region": "NORTH-AMERICA"
+    }, 
+    "NWS": {
+        "domain": "Land", 
+        "long_name": "N.W.South-America", 
+        "median": -71.91915601781446, 
+        "q5": -357.16463669715404, 
+        "q95": 154.40899314316752, 
+        "region": "SOUTH-AMERICA"
+    }, 
+    "NZ": {
+        "domain": "Land", 
+        "long_name": "New-Zealand", 
+        "median": -126.42271383896465, 
+        "q5": -274.14797552716857, 
+        "q95": -49.941386761213195, 
+        "region": "OCEANIA"
+    }, 
+    "RAR": {
+        "domain": "Land", 
+        "long_name": "Russian-Arctic", 
+        "median": -115.18877941176468, 
+        "q5": -320.8689705882353, 
+        "q95": -8.601407205882353, 
+        "region": "ASIA"
+    }, 
+    "RAR*": {
+        "domain": "Land", 
+        "long_name": "Russian-Arctic", 
+        "region": "ASIA"
+    }, 
+    "RFE": {
+        "domain": "Land", 
+        "long_name": "Russian-Far-East", 
+        "median": -61.83387912141763, 
+        "q5": -201.73076495205802, 
+        "q95": -0.546793261690649, 
+        "region": "ASIA"
+    }, 
+    "SAH": {
+        "domain": "Land", 
+        "long_name": "Sahara", 
+        "median": -106.37735235460414, 
+        "q5": -287.10482510963453, 
+        "q95": -7.940688741647336, 
+        "region": "AFRICA"
+    }, 
+    "SAM": {
+        "domain": "Land", 
+        "long_name": "South-American-Monsoon", 
+        "region": "SOUTH-AMERICA"
+    }, 
+    "SAO": {
+        "domain": "Ocean", 
+        "long_name": "S.Atlantic-Ocean", 
+        "region": "ATLANTIC"
+    }, 
+    "SAS": {
+        "domain": "Land", 
+        "long_name": "S.Asia", 
+        "median": -345.6752062574998, 
+        "q5": -690.9609856807076, 
+        "q95": -118.41705344002597, 
+        "region": "ASIA"
+    }, 
+    "SAU": {
+        "domain": "Land", 
+        "long_name": "S.Australia", 
+        "median": -130.85281260064158, 
+        "q5": -366.1763351509624, 
+        "q95": -5.528265831425339, 
+        "region": "OCEANIA"
+    }, 
+    "SCA": {
+        "domain": "Land", 
+        "long_name": "S.Central-America", 
+        "median": -197.18177445248162, 
+        "q5": -493.87628743289724, 
+        "q95": 15.868248556351904, 
+        "region": "CENTRAL-AMERICA"
+    }, 
+    "SEA": {
+        "domain": "Land-Ocean", 
+        "long_name": "S.E.Asia", 
+        "median": -136.41228446720362, 
+        "q5": -402.8189635742877, 
+        "q95": 12.980367369546643, 
+        "region": "ASIA"
+    }, 
+    "SEAF": {
+        "domain": "Land", 
+        "long_name": "S.Eastern-Africa", 
+        "median": -165.01226368317114, 
+        "q5": -400.35308275042934, 
+        "q95": -18.909833844304526, 
+        "region": "AFRICA"
+    }, 
+    "SES": {
+        "domain": "Land", 
+        "long_name": "S.E.South-America", 
+        "median": -204.1279596803877, 
+        "q5": -560.9261115993203, 
+        "q95": 63.134478737223056, 
+        "region": "SOUTH-AMERICA"
+    }, 
+    "SIO": {
+        "domain": "Ocean", 
+        "long_name": "S.Indic-Ocean", 
+        "median": -148.0220120858757, 
+        "q5": -211.53240451977402, 
+        "q95": -102.52392553672316, 
+        "region": "INDIAN"
+    }, 
+    "SOO": {
+        "domain": "Ocean", 
+        "long_name": "Southern-Ocean", 
+        "median": -138.26708714077373, 
+        "q5": -279.38357770633, 
+        "q95": -65.84995110802429, 
+        "region": "SOUTHERN"
+    }, 
+    "SPO": {
+        "domain": "Ocean", 
+        "long_name": "S.Pacific-Ocean", 
+        "median": -134.11015736301368, 
+        "q5": -273.2308312671233, 
+        "q95": -67.37959263698632, 
+        "region": "PACIFIC"
+    }, 
+    "SPO*": {
+        "domain": "Ocean", 
+        "long_name": "S.Pacific-Ocean", 
+        "median": -110.95186790909094, 
+        "q5": -226.24302914727272, 
+        "q95": -34.88942828545455, 
+        "region": "PACIFIC"
+    }, 
+    "SSA": {
+        "domain": "Land", 
+        "long_name": "S.South-America", 
+        "median": -157.46988337115914, 
+        "q5": -311.72712339740633, 
+        "q95": -75.88174839267339, 
+        "region": "SOUTH-AMERICA"
+    }, 
+    "SWS": {
+        "domain": "Land", 
+        "long_name": "S.W.South-America", 
+        "median": -51.71313555041323, 
+        "q5": -135.94825249498228, 
+        "q95": -5.5695596828512395, 
+        "region": "SOUTH-AMERICA"
+    }, 
+    "TIB": {
+        "domain": "Land", 
+        "long_name": "Tibetan-Plateau", 
+        "region": "ASIA"
+    }, 
+    "WAF": {
+        "domain": "Land", 
+        "long_name": "Western-Africa", 
+        "median": -167.9687042901838, 
+        "q5": -372.0163331237779, 
+        "q95": -67.8550152704341, 
+        "region": "AFRICA"
+    }, 
+    "WAN": {
+        "domain": "Land", 
+        "long_name": "W.Antarctica", 
+        "region": "POLAR"
+    }, 
+    "WCA": {
+        "domain": "Land", 
+        "long_name": "W.C.Asia", 
+        "median": -110.92989241252212, 
+        "q5": -267.31781933630316, 
+        "q95": -0.19439313132971128, 
+        "region": "ASIA"
+    }, 
+    "WCE": {
+        "domain": "Land", 
+        "long_name": "West&Central-Europe", 
+        "median": -160.68365686516395, 
+        "q5": -398.8320233968579, 
+        "q95": -43.257881994972685, 
+        "region": "EUROPE"
+    }, 
+    "WNA": {
+        "domain": "Land", 
+        "long_name": "W.North-America", 
+        "median": -76.98895286336635, 
+        "q5": -208.92686181916392, 
+        "q95": -17.87416228011001, 
+        "region": "NORTH-AMERICA"
+    }, 
+    "WSAF": {
+        "domain": "Land", 
+        "long_name": "W.Southern-Africa", 
+        "median": -96.45768702492835, 
+        "q5": -236.95090620181884, 
+        "q95": -13.851267630995391, 
+        "region": "AFRICA"
+    }, 
+    "WSB": {
+        "domain": "Land", 
+        "long_name": "W.Siberia", 
+        "region": "ASIA"
+    }
+}

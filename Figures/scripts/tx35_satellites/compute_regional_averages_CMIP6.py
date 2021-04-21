@@ -150,6 +150,7 @@ def weighted_mean(da, weights, dim):
 
     return weighted_sum / sum_of_weights
 
+#
 def average_over_AR6_region(filename, variable, region_name):
 
     # -- AR6 regions
@@ -170,8 +171,25 @@ def average_over_AR6_region(filename, variable, region_name):
     mask_3D = ar6_land.mask_3D(dat) # AR6 mask
     land_mask = land_110.mask_3D(dat) # Land sea mask
     mask_lsm = mask_3D * land_mask.squeeze(drop=True) # Combine the two
+    
+    # -- Compute weights
+    if dat.lat.shape == dat.shape:
+        weights = np.cos(np.deg2rad(dat.lat))
+    else:
+        # -- Case dat is has time dim
+        if 'time' in dat.dims:
+            matlat = np.mean(dat.values, axis=dat.dims.index('time')) * 0
+        else:
+            matlat = dat.values * 0
 
-    weights = np.cos(np.deg2rad(dat.lat))
+        if dat.dims.index('lat')<dat.dims.index('lon'):
+            for i in range(0,dat.shape[dat.dims.index('lon')]):
+                matlat[:,i] = dat.lat
+        else:
+            for i in range(0,dat.shape[dat.dims.index('lon')]):
+                matlat[i,:] = dat.lat
+    
+        weights = np.cos(np.deg2rad(matlat))
     
     if region_name=='all':
         return weighted_mean(dat, mask_3D * weights, ("lon", "lat"))
@@ -181,52 +199,18 @@ def average_over_AR6_region(filename, variable, region_name):
             for region in region_name:
                 region_mask = mask_lsm.isel(region=list(mask_3D.abbrevs).index(region))
                 dat_region = dat.where(region_mask)
-                weights_region = weights.where(region_mask)
+                weights_region = np.where(region_mask, weights, float("nan"))
+                #weights_region = weights.where(region_mask)
                 res.append( weighted_mean(dat_region, region_mask*weights_region, ("lon","lat")) )
             return res
         else:
             region_mask = mask_lsm.isel(region=list(mask_3D.abbrevs).index(region_name))
             dat_region = dat.where(region_mask)
-            weights_region = weights.where(region_mask)            
+            weights_region = np.where(region_mask, weights, float("nan"))
+            #weights_region = weights.where(region_mask)            
             return weighted_mean(dat_region, region_mask*weights_region, ("lon","lat"))
-    
-def regions_contained(lon, lat, regions):
+#
 
-    # determine if the longitude needs to be wrapped
-    regions_is_180 = regions.lon_180
-    grid_is_180 = regionmask.core.utils._is_180(lon.min(), lon.max())
-
-    wrap_lon = not regions_is_180 == grid_is_180
-
-    lon_orig = lon.copy()
-    if wrap_lon:
-        lon = regionmask.core.utils._wrapAngle(lon, wrap_lon)
-
-    lon = np.asarray(lon).squeeze()
-    lat = np.asarray(lat).squeeze()
-
-    if lon.ndim == 1 and lat.ndim == 1:
-        poly = shapely.geometry.box(lon.min(), lat.min(), lon.max(), lat.max())
-
-    # convex_hull is not really what we need
-    # https://gist.github.com/dwyerk/10561690
-    #     elif lon.ndim == 2 and lat.ndim == 2:
-    #         # get the convex hull from all points
-    #         lonlat = np.stack([lon.ravel(), lat.ravel()], axis=1)
-    #         multipoint = shapely.geometry.MultiPoint(lonlat)
-    #         poly = multipoint.convex_hull
-    else:
-        raise ValueError("Cannot currently handle 2D coordinates")
-
-    fully_contained = list()
-    for region_poly in regions.polygons:
-        res = poly.contains(region_poly)
-
-        fully_contained.append(res)
-
-    return xr.DataArray(
-        fully_contained, dims=["region"], coords=dict(region=regions.numbers)
-    )
 
 # -- Compute regional averages for time periods
 regional_averages = dict()
@@ -240,45 +224,17 @@ for ens_exp in ens_exp_dict:
         print mem
         # -- Compute the averages for each AR6 region thanks to regionmask
         tmp = average_over_AR6_region(cfile(ens_exp_dict[ens_exp][mem]), 'tx35isimip', 'all')
-        region_names = tmp.abbrevs
+        region_names = list(tmp.abbrevs)
+        ttmp = average_over_AR6_region(cfile(ens_exp_dict[ens_exp][mem]), 'tx35isimip', region_names)
         for tmp_region_name in region_names:
             region_name = str(tmp_region_name.values)
-            print region_name
-            region_value = float(tmp.sel(region=list(tmp.abbrevs).index(region_name)).values)
+            region_value = float(ttmp[list(tmp.abbrevs).index(region_name)])
+            print region_name, region_value
             if region_name not in regional_averages[ens_exp]:
                 regional_averages[ens_exp][region_name] = [region_value]
             else:
                 regional_averages[ens_exp][region_name].append(region_value)
 
-# -- Compute differences against baseline
-regional_averages_diff = dict()
-
-# -- Loop on experiments / horizons
-#wind_ens_clim_exp_dict[exp]
-for ens_exp in ens_exp_dict:
-    if ens_exp not in ['baseline','baseline_ext']:
-        print ens_exp
-        regional_averages_diff[ens_exp] = dict()
-        # -- Loop on the members of each ensemble
-        for mem in ens_exp_dict[ens_exp]:
-            if mem in ens_exp_dict['baseline']:
-                print mem
-                # -- Compute the averages for each AR6 region thanks to regionmask
-                #print cfile(ens_exp_dict[ens_exp][mem])
-                #cmd = 'ncrename -v .uas,wind -v .vas,wind -v .sfcWind,wind '+cfile(ens_exp_dict[ens_exp][mem])
-                #os.system(cmd)
-                tmp = average_over_AR6_region(cfile(ens_exp_dict[ens_exp][mem]), 'tx35isimip', 'all')
-                tmp_baseline = average_over_AR6_region(cfile(ens_exp_dict['baseline'][mem]), 'tx35isimip', 'all')
-                region_names = tmp.abbrevs
-                for tmp_region_name in region_names:
-                    region_name = str(tmp_region_name.values)
-                    region_value = float(tmp.sel(region=list(tmp.abbrevs).index(region_name)).values)
-                    region_value_baseline = float(tmp_baseline.sel(region=list(tmp.abbrevs).index(region_name)).values)
-                    if region_name not in regional_averages_diff[ens_exp]:
-                        regional_averages_diff[ens_exp][region_name] = [region_value - region_value_baseline]
-                    else:
-                        regional_averages_diff[ens_exp][region_name].append(region_value - region_value_baseline)
-        #
 
 # -- regional averages for the GWL
 for GWL in ens_dict_per_GWL:
@@ -289,40 +245,17 @@ for GWL in ens_dict_per_GWL:
         print mem
         # -- Compute the averages for each AR6 region thanks to regionmask
         tmp = average_over_AR6_region(cfile(ens_dict_per_GWL[GWL][mem]), 'tx35isimip', 'all')
-        region_names = tmp.abbrevs
+        region_names = list(tmp.abbrevs)
+        ttmp = average_over_AR6_region(cfile(ens_dict_per_GWL[GWL][mem]), 'tx35isimip', region_names)
         for tmp_region_name in region_names:
             region_name = str(tmp_region_name.values)
-            print region_name
-            region_value = float(tmp.sel(region=list(tmp.abbrevs).index(region_name)).values)
+            region_value = float(ttmp[list(tmp.abbrevs).index(region_name)])
+            print region_name, region_value
             if region_name not in regional_averages[GWL]:
                 regional_averages[GWL][region_name] = [region_value]
             else:
                 regional_averages[GWL][region_name].append(region_value)
 
-# -- Differences with baseline for GWL
-# -- Loop on experiments / horizons
-for GWL in ens_dict_per_GWL:
-    print GWL
-    regional_averages_diff[GWL] = dict()
-    # -- Loop on the members of each ensemble
-    for mem in ens_dict_per_GWL[GWL]:
-        wmem = mem.replace('_85','').replace('_26','')
-        #if mem.replace('_85','').replace('_26','') in ens_exp_dict['historical_1995-2014']:
-        if wmem in ens_exp_dict['baseline']:
-            print wmem
-            # -- Compute the averages for each AR6 region thanks to regionmask
-            tmp = average_over_AR6_region(cfile(ens_dict_per_GWL[GWL][mem]), 'tx35isimip', 'all')
-            tmp_baseline = average_over_AR6_region(cfile(ens_exp_dict['baseline'][wmem]), 'tx35isimip', 'all')
-            region_names = tmp.abbrevs
-            for tmp_region_name in region_names:
-                region_name = str(tmp_region_name.values)
-                #print region_name
-                region_value = float(tmp.sel(region=list(tmp.abbrevs).index(region_name)).values)
-                region_value_baseline = float(tmp_baseline.sel(region=list(tmp_baseline.abbrevs).index(region_name)).values)
-                if region_name not in regional_averages_diff[GWL]:
-                    regional_averages_diff[GWL][region_name] = [region_value - region_value_baseline]
-                else:
-                    regional_averages_diff[GWL][region_name].append(region_value - region_value_baseline)
 
 # -- Compute quantiles and save in json
 quantiles_dict = dict()
@@ -340,27 +273,8 @@ for clim_period in regional_averages:
 import json
 
 ensemble = 'CMIP6'
-outfilename = '/home/jservon/Chapter12_IPCC/data/tx35_satellites/'+ensemble+'_tx35isimip_AR6_regional_averages.json'
+outfilename = '/home/jservon/Chapter12_IPCC/data/Figure_S12.1/'+ensemble+'_tx35isimip_AR6_regional_averages.json'
 #print outfilename
 with open(outfilename, 'w') as fp:
     json.dump(quantiles_dict, fp, sort_keys=True, indent=4)
-    
-quantiles_dict = dict()
-for clim_period in regional_averages_diff:
-    quantiles_dict[clim_period] = dict()
-    for region_name in regional_averages_diff[clim_period]:
-        print clim_period, region_name
-        quantiles_dict[clim_period][region_name] = dict()
-        dat = np.array(regional_averages_diff[clim_period][region_name])
-        q10 = np.quantile(dat, 0.1)
-        q50 = np.quantile(dat, 0.5)
-        q90 = np.quantile(dat, 0.9)
-        quantiles_dict[clim_period][region_name] = [q10, q50, q90]
 
-import json
-
-ensemble = 'CMIP6'
-outfilename = '/home/jservon/Chapter12_IPCC/data/tx35_satellites/'+ensemble+'_tx35isimip_diff_AR6_regional_averages.json'
-#print outfilename
-with open(outfilename, 'w') as fp:
-    json.dump(quantiles_dict, fp, sort_keys=True, indent=4)
