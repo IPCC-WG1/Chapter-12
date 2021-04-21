@@ -207,13 +207,6 @@ def plot_esl_change(wks, baseline, future, horizon, inc, colormap, title):
     map = create_map(wks, mpOutlineOn=True)
     wmap_empty = create_map(wks, mpOutlineOn=False)
     
-    #add_trajectories(wks,
-    #                 map,
-    #                 baseline,
-    #                 future,
-    #                 horizon,
-    #                 inc,
-    #                 colormap)
     add_trajectories(wks,
                      wmap_empty,
                      baseline,
@@ -229,23 +222,16 @@ def plot_esl_change(wks, baseline, future, horizon, inc, colormap, title):
 
     add_labelbar(wks, map, inc, colormap)
 
-    #Ngl.draw(map)
-
-    #pp['tiMainFontHeightF'] = 0.03
-    #pp['gsnStringFontHeightF'] = 0.025
-
     # Set up some text resources.
     txres                       = Ngl.Resources()  
     txres.txFontHeightF         = 0.03
 
     # Draw a text string labeling the marker
     Ngl.text_ndc(wks,"Change in extreme total water level",0.5,0.78,txres)
-    #Ngl.text_ndc(wks,label,0.05,0.77,txres)
 
     tmainxres                       = Ngl.Resources()  
     tmainxres.txFontHeightF         = 0.032
     tmainxres.txFont         = 22
-    #tmainxres.txFontThicknessF  = 10
     Ngl.text_ndc(wks,title,0.5,0.83,tmainxres)
 
     Ngl.frame(wks)
@@ -261,7 +247,6 @@ def plot_esl_change(wks, baseline, future, horizon, inc, colormap, title):
 # -----------------------------------------------
 colormap = "WhViBlGrYeOrRe"
 colormap = "nice_gfdl"
-#colormap = "WhViBlGrYeOrReWh"
 
 slev_seq_disc21_raw = [
 [254., 254., 254.],
@@ -328,19 +313,12 @@ test_disc7 = numpy.array(test)
 colormap = test_disc7
 
 
-#inc = [0, 0.1, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4]
-#inc = [0, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 1, 1.2, 1.4]
-#inc = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.5, 2]
 inc = [0, 0.2, 0.4, 0.6, 0.8, 1]
-#inc = [0, 0.5, 0.75, 1.0, 1.25, 1.5]#, 1.75, 2.0]
-#inc = [0, 0.2, 0.4, 0.6, 0.8, 1, 1.2]
-#inc = [0, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.2]
 
 outfilename = 'ESL_'+str(horizon)+'_'+rcp
 
 if figformat=='png':
     wks = Ngl.open_wks("png",outfilename)
-    #wks = Ngl.open_wks("pdf",outfilename)
     plot_esl_change(wks, baseline, future, horizon, inc, colormap, title)
 
 
@@ -350,19 +328,16 @@ if figformat=='png':
 
     def extract_labelbar(figure_file,labelbar_file) :
         im = PILImage.open(figure_file)
-        #box=(left, upper, right, lower).
         im_crop = im.crop((190, 810, 820, 885))
         im_crop.save(labelbar_file, quality=95)
 
     def extract_plot(figure_file,trim_figure) :
         im = PILImage.open(figure_file)
-        #box=(left, upper, right, lower).
         im_crop = im.crop((20, 152, 1010, 763))
         im_crop.save(trim_figure, quality=95)
 
 
     outfilename = 'ESL_'+str(horizon)+'_'+rcp+'.png'
-    #outfilename = 'ESL_'+str(horizon)+'_'+rcp+'.pdf'
 
     # -- color bar file
     variable = 'ESL'
@@ -379,11 +354,3 @@ if figformat=='pdf':
     cmd = 'pdfcrop '+outfilename+' '+trim_figure
     os.system(cmd)
     
-    # -- color bar file
-    #variable = 'ESL'
-    #colorbar_file = '/home/jservon/Chapter12_IPCC/figs/global_figure_12.4/'+variable+'_colorbar.png'
-    # -- Extract the colorbar
-    #extract_labelbar(outfilename,colorbar_file)
-    #extract_plot(outfilename,trim_figure)
-
-#Image(colorbar_file)

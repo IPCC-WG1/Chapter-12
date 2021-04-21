@@ -1,0 +1,10 @@
+ ! NOAA/PMEL TMAP
+ ! FERRET v6.9  
+ ! Linux 2.6.32-431.23.3.el6.x86_64 64-bit - 08/22/14
+ !  2-Apr-21 12:19     
+
+GO "$HOME/.ferret"
+use tx35_panel_c_ssp585_2081-2100_minus_baseline.nc
+sho d
+shade tx35isimip
+q

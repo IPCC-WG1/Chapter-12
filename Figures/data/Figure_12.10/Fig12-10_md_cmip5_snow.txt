@@ -1,0 +1,60 @@
+DATA_REF_SYNTAX;FREQUENCY;MODELING_REALM;TABLE_ID;ENS_MEMBER;VERSION_NO;VAR_NAME;HANDLE;SUBPANEL
+CMIP5.output.BCC.bcc-csm1-1.historical;day;landIce;day;r1i1p1;v1;snw;b1528800-0c4c-46b7-acfd-74c851f843a4;d
+CMIP5.output.BCC.bcc-csm1-1.rcp26;day;landIce;day;r1i1p1;v20120705;snw;32d7832a-8873-413c-b12e-2ce63e1de8d4;d
+CMIP5.output.BCC.bcc-csm1-1.rcp85;day;landIce;day;r1i1p1;v20120705;snw;867230d1-202a-4576-9413-5bc3dfa06017;d
+CMIP5.output.BCC.bcc-csm1-1-m.historical;day;landIce;day;r1i1p1;v20120709;snw;528f4556-6e84-4f35-b1b7-266f4f7413c0;d
+CMIP5.output.BCC.bcc-csm1-1-m.rcp26;day;landIce;day;r1i1p1;v20120910;snw;09b30326-d509-46bb-b607-1c2d51de9f56;d
+CMIP5.output.BCC.bcc-csm1-1-m.rcp85;day;landIce;day;r1i1p1;v20130411;snw;6a04d1bc-967c-4ab0-99f5-8bcab3f982f5;d
+CMIP5.output.BNU.BNU-ESM.historical;day;landIce;day;r1i1p1;v20120504;snw;bc3ca2e5-4320-4c8b-8662-53837703e6e6;d
+CMIP5.output.BNU.BNU-ESM.rcp26;day;landIce;day;r1i1p1;v20120503;snw;c144cfd0-a0ea-4802-b562-0a52bcb93e6c;d
+CMIP5.output.BNU.BNU-ESM.rcp85;day;landIce;day;r1i1p1;v20120504;snw;da0e0c9a-693b-448b-afbf-2c846cf9267b;d
+CMIP5.output.CCCma.CanESM2.historical;day;landIce;day;r1i1p1;v20120618;snw;f850d609-b008-4f31-940a-59bb1bd10b60;d
+CMIP5.output.CCCma.CanESM2.rcp26;day;landIce;day;r1i1p1;v20120618;snw;09692a84-de6e-4297-9974-973153748d94;d
+CMIP5.output.CCCma.CanESM2.rcp85;day;landIce;day;r1i1p1;v20120407;snw;876eca63-dfb2-456d-9501-a4e2282f4e58;d
+CMIP5.output.CNRM-CERFACS.CNRM-CM5.historical;day;landIce;day;r1i1p1;v20120530;snw;6c0b07f0-5a32-497a-8237-18d881ffc366;d
+CMIP5.output.CNRM-CERFACS.CNRM-CM5.rcp26;day;landIce;day;r1i1p1;v20121001;snw;207a08ee-de12-4b37-9a66-a58f1586a25a;d
+CMIP5.output.CNRM-CERFACS.CNRM-CM5.historical;day;landIce;day;r1i1p1;v20120530;snw;f211a01e-3d38-4922-aea8-ad19742a8528;d
+CMIP5.output.CSIRO-QCCCE.CSIRO-Mk3-6-0.historical;day;landIce;day;r1i1p1;v20110518;snw;77812266-4586-4267-a3e4-e3544748f990;d
+CMIP5.output.CSIRO-QCCCE.CSIRO-Mk3-6-0.rcp26;day;landIce;day;r1i1p1;v20110518;snw;d7df4d70-61e8-40fb-b462-87f7f05b440d;d
+CMIP5.output.CSIRO-QCCCE.CSIRO-Mk3-6-0.rcp85;day;landIce;day;r1i1p1;v20110518;snw;60d67f03-cf64-4ae2-bf8e-b779f1cd1375;d
+CMIP5.output.LASG-CESS.FGOALS-g2.historical;day;landIce;day;r1i1p1;v20161204;snw;89a8bc79-c515-48aa-a039-a33a9e0c0136;d
+CMIP5.output.LASG-CESS.FGOALS-g2.rcp26;day;landIce;day;r1i1p1;v20161204;snw;d353d66c-321b-4e3f-be86-12b074faa373;d
+CMIP5.output.LASG-CESS.FGOALS-g2.rcp85;day;landIce;day;r1i1p1;v20161204;snw;0fa13953-828d-4091-8e57-1ae7a54205ff;d
+CMIP5.output1.NOAA GFDL.GFDL-CM3.historical;day;landIce;day;r1i1p1;v20110601;snw;f890c486-cfbc-46cc-9870-aed70ec1e909;d
+CMIP5.output1.NOAA GFDL.GFDL-CM3.rcp85;day;landIce;day;r1i1p1;v20110601;snw;2bca3228-f23f-45f1-928f-4b73326b2312;d
+CMIP5.output1.NOAA GFDL.GFDL-ESM2G.historical;day;landIce;day;r1i1p1;v20110601;snw;cf6c166e-d7cf-4186-a1ce-a9a34c1097ca;d
+CMIP5.output1.NOAA GFDL.GFDL-ESM2G.rcp26;day;landIce;day;r1i1p1;v20110601;snw;147aa23e-7436-4eda-94c6-f817c4c2fa60;d
+CMIP5.output1.NOAA GFDL.GFDL-ESM2G.rcp85;day;landIce;day;r1i1p1;v20110601;snw;c88aa41a-4e73-4b28-84a1-009916813a03;d
+CMIP5.output1.NOAA GFDL.GFDL-ESM2M.historical;day;landIce;day;r1i1p1;v20110601;snw;03f76b26-743f-4c3f-997d-bbb52a49561b;d
+CMIP5.output1.NOAA GFDL.GFDL-ESM2M.rcp26;day;landIce;day;r1i1p1;v20110601;snw;f110feff-b7d2-42a1-989d-b94009849fc7;d
+CMIP5.output1.NOAA GFDL.GFDL-ESM2M.rcp85;day;landIce;day;r1i1p1;v20110601;snw;011e8cba-5908-48bb-b0b9-794ea40edadb;d
+CMIP5.output.MOHC.HadGEM2-CC.historical;day;landIce;day;r1i1p1;v20110930;snw;87ab678d-f236-4952-b68f-a0963ebcff36;d
+CMIP5.output.MOHC.HadGEM2-CC.rcp85;day;landIce;day;r1i1p1;v20120531;snw;67eabc11-9c66-4747-8dd5-4095abe87335;d
+CMIP5.output.MOHC.HadGEM2-ES.historical;day;landIce;day;r1i1p1;v20111212;snw;73cb7ac0-beb4-40a0-945b-58b0fca507a9;d
+CMIP5.output.MOHC.HadGEM2-ES.rcp26;day;landIce;day;r1i1p1;v20120405;snw;49302721-c87d-4e33-8523-97fadbddddc3;d
+CMIP5.output.MOHC.HadGEM2-ES.rcp85;day;landIce;day;r1i1p1;v20111212;snw;a7c3dec5-2aa4-4f19-92ce-b3741348574e;d
+CMIP5.output.INM.inmcm4.historical;day;landIce;day;r1i1p1;v20110323;snw;0ad76cdf-340e-4291-8bd1-e632641a82c4;d
+CMIP5.output.INM.inmcm4.rcp85;day;landIce;day;r1i1p1;v20110323;snw;8752c303-2919-40b1-be6a-e4a45c2240ab;d
+CMIP5.output.MIROC.MIROC5.historical;day;landIce;day;r1i1p1;v20111124;snw;f82f40e8-3a9f-4c37-9a1a-167ea918434f;d
+CMIP5.output.MIROC.MIROC5.rcp26;day;landIce;day;r1i1p1;v20111124;snw;4ea35aba-f974-49bc-bb34-ee3c1dee1795;d
+CMIP5.output.MIROC.MIROC5.rcp85;day;landIce;day;r1i1p1;v20111124;snw;afbaf948-18f7-4841-82ec-cf2b227f5b99;d
+CMIP5.output.MIROC.MIROC-ESM.historical;day;landIce;day;r1i1p1;v20111129;snw;71b99687-a745-47d7-95c9-dd3a3d86a907;d
+CMIP5.output.MIROC.MIROC-ESM.rcp26;day;landIce;day;r1i1p1;v20111129;snw;32dfaaa3-6e2b-4000-99f2-c858af0b1e68;d
+CMIP5.output.MIROC.MIROC-ESM.rcp85;day;landIce;day;r1i1p1;v20111129;snw;80aed401-68c3-4c52-8fa5-5171f6b19047;d
+CMIP5.output.MIROC.MIROC-ESM-CHEM.historical;day;landIce;day;r1i1p1;v20111129;snw;17f45697-9676-4722-9967-544ecabe413b;d
+CMIP5.output.MIROC.MIROC-ESM-CHEM.rcp26;day;landIce;day;r1i1p1;v20111129;snw;b1d3702d-de27-4559-9e68-b8d78912150d;d
+CMIP5.output.MIROC.MIROC-ESM-CHEM.rcp85;day;landIce;day;r1i1p1;v20111129;snw;4c4fc282-110a-45f6-bb76-155606ddaaaa;d
+CMIP5.output.MPI-M.MPI-ESM-LR.historical;day;landIce;day;r1i1p1;v20111006;snw;49c820d8-91d7-486f-bf62-ec6a7867b837;d
+CMIP5.output.MPI-M.MPI-ESM-LR.rcp26;day;landIce;day;r1i1p1;v20111014;snw;1e2a1765-dc20-47c1-81e1-d4e57b3a09d7;d
+CMIP5.output.MPI-M.MPI-ESM-LR.rcp85;day;landIce;day;r1i1p1;v20111014;snw;59828515-867f-4d07-97fe-2b9d4a6ec86c;d
+CMIP5.output.MPI-M.MPI-ESM-MR.historical;day;landIce;day;r1i1p1;v20120503;snw;7ba29d5b-7ba3-4374-8d91-80a5a0b76ae9;d
+CMIP5.output.MPI-M.MPI-ESM-MR.rcp26;day;landIce;day;r1i1p1;v20120503;snw;a4b50561-04ae-46de-b18a-418bf0afa87b;d
+CMIP5.output.MPI-M.MPI-ESM-MR.rcp85;day;landIce;day;r1i1p1;v20120503;snw;f37ae946-cd7c-4de7-9268-d8c17e696a05;d
+CMIP5.output.MRI.MRI-CGCM3.historical;day;landIce;day;r1i1p1;v20111019;snw;8a2ccbc5-bfb5-459f-941b-e993d0c4356b;d
+CMIP5.output.MRI.MRI-CGCM3.rcp26;day;landIce;day;r1i1p1;v20111019;snw;132c6903-9495-4377-9754-b3a964825260;d
+CMIP5.output.MRI.MRI-CGCM3.rcp85;day;landIce;day;r1i1p1;v20111019;snw;d40efea7-a2ad-493c-904f-f011345216a0;d
+CMIP5.output.MRI.MRI-ESM1.historical;day;landIce;day;r1i1p1;v20130307;snw;0550d1b5-f310-44ed-8fae-620384b4fc9f;d
+CMIP5.output.MRI.MRI-ESM1.rcp85;day;landIce;day;r1i1p1;v20140210;snw;aa695d73-3cb6-404b-b0df-7bd9a8474fba;d
+CMIP5.output.NCC.NorESM1-M.historical;day;landIce;day;r1i1p1;v20110901;snw;db5176ff-3351-4a83-95df-cfed98be2d87;d
+CMIP5.output.NCC.NorESM1-M.rcp26;day;landIce;day;r1i1p1;v20110901;snw;a237373d-966f-4e70-a591-6343069882e5;d
+CMIP5.output.NCC.NorESM1-M.rcp85;day;landIce;day;r1i1p1;v20110901;snw;1c64b868-1342-4365-a964-23a4e4cf30bd;d

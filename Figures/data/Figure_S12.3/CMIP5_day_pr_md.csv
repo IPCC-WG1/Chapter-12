@@ -1,0 +1,112 @@
+DATA_REF_SYNTAX,FREQUENCY,MODELING_REALM,day,ENS_MEMBER,VERSION_NO,VAR_NAME
+CMIP5.output.CSIRO-BOM.ACCESS1-0.historical,day,atmos,day,r1i1p1,v20120115,pr
+CMIP5.output.CSIRO-BOM.ACCESS1.3.historical,day,atmos,day,r1i1p1,v20120413,pr
+CMIP5.output.BCC.bcc-csm1-1-m.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.BCC.bcc-csm1-1.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.BNU.BNU-ESM.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CCCma.CanESM2.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.NCAR.CCSM4.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.NSF-DOE-NCAR.CESM1-BGC.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CMCC.CMCC-CM.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CMCC.CMCC-CMS.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CNRM-CERFACS.CNRM-CM5.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CSIRO-QCCCE.CSIRO-Mk3-6-0.historical,day,atmos,day,r1i1p1,v20110518,pr
+CMIP5.output.ICHEC.EC-EARTH.historical,day,atmos,day,r12i1p1,NA,pr
+CMIP5.output.LASG-CESS.FGOALS_g2.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output1.NOAA GFDL.GFDL-CM3.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output1.NOAA GFDL.GFDL-ESM2G.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output1.NOAA GFDL.GFDL-ESM2M.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MOHC.HadGEM2-CC.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MOHC.HadGEM2-ES.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.INM.inmcm4.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.IPSL.IPSL-CM5A-LR.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.IPSL.IPSL-CM5A-MR.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.IPSL.IPSL-CM5B-LR.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MIROC.MIROC-ESM-CHEM.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MIROC.MIROC-ESM.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MIROC.MIROC5.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MPI-M.MPI-ESM-LR.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MPI-M.MPI-ESM-MR.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MRI.MRI-CGCM3.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.NCC.NorESM1-M.historical,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.BCC.bcc-csm1-1-m.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.BCC.bcc-csm1-1.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.BNU.BNU-ESM.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CCCma.CanESM2.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.NCAR.CCSM4.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CNRM-CERFACS.CNRM-CM5.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CSIRO-QCCCE.CSIRO-Mk3-6-0.rcp26,day,atmos,day,r1i1p1,v20110518,pr
+CMIP5.output.ICHEC.EC-EARTH.rcp26,day,atmos,day,r12i1p1,NA,pr
+CMIP5.output.LASG-CESS.FGOALS_g2.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output1.NOAA GFDL.GFDL-CM3.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output1.NOAA GFDL.GFDL-ESM2G.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output1.NOAA GFDL.GFDL-ESM2M.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MOHC.HadGEM2-ES.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.IPSL.IPSL-CM5A-LR.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.IPSL.IPSL-CM5A-MR.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MIROC.MIROC-ESM-CHEM.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MIROC.MIROC-ESM.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MIROC.MIROC5.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MPI-M.MPI-ESM-LR.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MPI-M.MPI-ESM-MR.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MRI.MRI-CGCM3.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.NCC.NorESM1-M.rcp26,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CSIRO-BOM.ACCESS1-0.rcp45,day,atmos,day,r1i1p1,v20120115,pr
+CMIP5.output.CSIRO-BOM.ACCESS1.3.rcp45,day,atmos,day,r1i1p1,v20120413,pr
+CMIP5.output.BCC.bcc-csm1-1-m.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.BCC.bcc-csm1-1.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.BNU.BNU-ESM.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CCCma.CanESM2.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.NCAR.CCSM4.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.NSF-DOE-NCAR.CESM1-BGC.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CMCC.CMCC-CM.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CMCC.CMCC-CMS.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CNRM-CERFACS.CNRM-CM5.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CSIRO-QCCCE.CSIRO-Mk3-6-0.rcp45,day,atmos,day,r1i1p1,v20110518,pr
+CMIP5.output.ICHEC.EC-EARTH.rcp45,day,atmos,day,r12i1p1,NA,pr
+CMIP5.output.LASG-CESS.FGOALS_g2.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output1.NOAA GFDL.GFDL-ESM2G.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output1.NOAA GFDL.GFDL-ESM2M.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MOHC.HadGEM2-CC.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MOHC.HadGEM2-ES.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.INM.inmcm4.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.IPSL.IPSL-CM5A-LR.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.IPSL.IPSL-CM5A-MR.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.IPSL.IPSL-CM5B-LR.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MIROC.MIROC-ESM-CHEM.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MIROC.MIROC-ESM.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MIROC.MIROC5.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MPI-M.MPI-ESM-LR.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MPI-M.MPI-ESM-MR.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MRI.MRI-CGCM3.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.NCC.NorESM1-M.rcp45,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CSIRO-BOM.ACCESS1-0.rcp85,day,atmos,day,r1i1p1,v20120115,pr
+CMIP5.output.CSIRO-BOM.ACCESS1.3.rcp85,day,atmos,day,r1i1p1,v20120413,pr
+CMIP5.output.BCC.bcc-csm1-1-m.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.BCC.bcc-csm1-1.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.BNU.BNU-ESM.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CCCma.CanESM2.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.NCAR.CCSM4.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.NSF-DOE-NCAR.CESM1-BGC.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CMCC.CMCC-CM.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CMCC.CMCC-CMS.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CNRM-CERFACS.CNRM-CM5.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.CSIRO-QCCCE.CSIRO-Mk3-6-0.rcp85,day,atmos,day,r1i1p1,v20110518,pr
+CMIP5.output.ICHEC.EC-EARTH.rcp85,day,atmos,day,r12i1p1,NA,pr
+CMIP5.output.LASG-CESS.FGOALS_g2.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output1.NOAA GFDL.GFDL-CM3.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output1.NOAA GFDL.GFDL-ESM2G.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output1.NOAA GFDL.GFDL-ESM2M.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MOHC.HadGEM2-CC.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MOHC.HadGEM2-ES.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.INM.inmcm4.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.IPSL.IPSL-CM5A-LR.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.IPSL.IPSL-CM5A-MR.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.IPSL.IPSL-CM5B-LR.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MIROC.MIROC-ESM-CHEM.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MIROC.MIROC-ESM.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MIROC.MIROC5.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MPI-M.MPI-ESM-LR.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MPI-M.MPI-ESM-MR.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.MRI.MRI-CGCM3.rcp85,day,atmos,day,r1i1p1,NA,pr
+CMIP5.output.NCC.NorESM1-M.rcp85,day,atmos,day,r1i1p1,NA,pr

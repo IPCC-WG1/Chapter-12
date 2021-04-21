@@ -1,7 +1,0 @@
-PDFCROP 1.38, 2012/11/02 - Copyright (c) 2002-2012 by Heiko Oberdiek.
-==> 1 page written on `/data/jservon/climafcache/37/5e515f99a9157243c874e57ce95d2db9e0293e970998bd0b6ad529_13525.pdf'.
-
-
-stdout and stderr of script call :
-	 /ciclad-home/jservon/Evaluation/CliMAF/climaf_installs/climaf_V1.2.13_post/climaf/../bin/pdfcrop /data/jservon/climafcache/52/8131920da78e13cd61c53fbf4906305bc565137cb131472b36fd20.pdf /data/jservon/climafcache/37/5e515f99a9157243c874e57ce95d2db9e0293e970998bd0b6ad529_13525.pdf 
-
