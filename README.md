@@ -13,6 +13,7 @@ The folder **snow** contains the code to compute SWE100 snow index.
 
 ### Description of the content of the Figures folder
 Author: Jerome Servonnat
+
 In this section I describe for each figure the scripts and data used to produce it.
 
 #### Figure 12.4
@@ -25,4 +26,76 @@ In this section I describe for each figure the scripts and data used to produce 
    - ensemble median: tx35_panel_a_ssp126_2081-2100_minus_baseline.nc
    - model agreement: mask_80perc-agreement_tx35_panel_a_ssp126_2081-2100_minus_baseline.nc
   - figure: panel_a_tx35_ssp126_2081-2100_80perc-agreement.[png/pdf]
+- panel b: 
+  - data:
+   - ensemble median: tx35_panel_b_ssp585_2041-2060_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_tx35_panel_b_ssp585_2041-2060_minus_baseline.nc
+  - figure: panel_b_tx35_ssp585_2041-2060_80perc-agreement.[png/pdf]
+- panel c: 
+  - data:
+   - ensemble median: tx35_panel_c_ssp585_2081-2100_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_tx35_panel_c_ssp585_2081-2100_minus_baseline.nc
+  - figure: panel_c_tx35_ssp585_2081-2100_80perc-agreement.[png/pdf]
+- colorbar: tx35_colorbar.[png/pdf]
+**panels d, e, f**
+- script: https://github.com/IPCC-WG1/Chapter-12/blob/main/Figures/scripts/global_figure_12.4/HI_NOAA_individual_figures.ipynb
+- final plotted data in directory: https://github.com/IPCC-WG1/Chapter-12/tree/main/Figures/data/Figure_12.4/HI41
+- figures in directory: https://github.com/IPCC-WG1/Chapter-12/tree/main/Figures/figs/global_figure_12.4
+- panel d: 
+  - data:
+   - ensemble median: HI41_panel_d_ssp126_2081-2100_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_HI41_panel_d_ssp126_2081-2100_minus_baseline.nc
+  - figure: panel_d_HI41_ssp126_2081-2100_80perc-agreement.[png/pdf]
+- panel e: 
+  - data:
+   - ensemble median: HI41_panel_e_ssp585_2041-2060_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_HI41_panel_e_ssp585_2041-2060_minus_baseline.nc
+  - figure: panel_e_HI41_ssp585_2041-2060_80perc-agreement.[png/pdf]
+- panel f: 
+  - data:
+   - ensemble median: tx35_panel_c_ssp585_2081-2100_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_HI41_panel_f_ssp585_2081-2100_minus_baseline.nc
+  - figure: panel_f_HI41_ssp585_2081-2100_80perc-agreement.[png/pdf]
+- colorbar: HI41_colorbar.[png/pdf]
+**panels g, h, i**
+- script: https://github.com/IPCC-WG1/Chapter-12/blob/main/Figures/scripts/global_figure_12.4/DF6_individual_figures.ipynb
+- final plotted data in directory: https://github.com/IPCC-WG1/Chapter-12/tree/main/Figures/data/Figure_12.4/DF6
+- figures in directory: https://github.com/IPCC-WG1/Chapter-12/tree/main/Figures/figs/global_figure_12.4
+- panel g: 
+  - data: 
+   - ensemble median: DF6_panel_g_ssp126_farch_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_DF6_panel_g_ssp126_farch_minus_baseline.nc
+  - figure: panel_g_DF6_ssp126_farch_80perc-agreement.[png/pdf]
+- panel h: 
+  - data: 
+   - ensemble median: DF6_panel_h_ssp585_midch_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_DF6_panel_h_ssp585_midch_minus_baseline.nc
+  - figure: panel_h_DF6_ssp585_midch_80perc-agreement.[png/pdf]
+- panel i: 
+  - data:
+   - ensemble median: DF6_panel_i_ssp585_farch_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_DF6_panel_i_ssp585_farch_minus_baseline.nc
+  - figure: panel_i_DF6_ssp585_farch_80perc-agreement.[png/pdf]
+- colorbar: DF6_colorbar.[png/pdf]
+**panels j, k, l**
+- script: https://github.com/IPCC-WG1/Chapter-12/blob/main/Figures/scripts/global_figure_12.4/SoilMoisture_individual_figures.ipynb
+- final plotted data in directory: https://github.com/IPCC-WG1/Chapter-12/tree/main/Figures/data/Figure_12.4/SM
+- figures in directory: https://github.com/IPCC-WG1/Chapter-12/tree/main/Figures/figs/global_figure_12.4
+- panel j: 
+  - data: 
+   - ensemble median: 
+   - model agreement: 
+  - figure: .[png/pdf]
+- panel k: 
+  - data: 
+   - ensemble median: 
+   - model agreement: 
+  - figure: .[png/pdf]
+- panel l: 
+  - data:
+   - ensemble median: 
+   - model agreement: 
+  - figure: .[png/pdf]
+- colorbar: DF6_colorbar.[png/pdf]
+
 
