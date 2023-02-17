@@ -86,19 +86,55 @@ In this section I describe for each figure the scripts and data used to produce 
 - figures in directory: https://github.com/IPCC-WG1/Chapter-12/tree/main/Figures/figs/global_figure_12.4
 - panel j: 
   - data: 
-   - ensemble median: 
-   - model agreement: 
-  - figure: .[png/pdf]
+   - ensemble median: SM_panel_j_ssp126_2081-2100_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_SM_panel_j_ssp126_2081-2100_minus_baseline.nc
+  - figure: panel_j_mrso_ssp126_2081-2100_80perc-agreement.[png/pdf]
 - panel k: 
   - data: 
-   - ensemble median: 
-   - model agreement: 
-  - figure: .[png/pdf]
+   - ensemble median: SM_panel_k_ssp585_2041-2060_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_SM_panel_k_ssp585_2041-2060_minus_baseline.nc
+  - figure: panel_k_mrso_ssp585_2041-2060_80perc-agreement.[png/pdf]
 - panel l: 
   - data:
-   - ensemble median: 
-   - model agreement: 
-  - figure: .[png/pdf]
-- colorbar: DF6_colorbar.[png/pdf]
+   - ensemble median: SM_panel_l_ssp585_2081-2100_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_SM_panel_l_ssp585_2081-2100_minus_baseline.nc
+  - figure: panel_l_mrso_ssp585_2081-2100_80perc-agreement.[png/pdf]
+- colorbar: SM_colorbar.[png/pdf]
+
+**panels m, n, o**
+- script: https://github.com/IPCC-WG1/Chapter-12/blob/main/Figures/scripts/global_figure_12.4/wind_perc-baseline_individual_figures.ipynb
+- final plotted data in directory: https://github.com/IPCC-WG1/Chapter-12/tree/main/Figures/data/Figure_12.4/sfcWind
+- figures in directory: https://github.com/IPCC-WG1/Chapter-12/tree/main/Figures/figs/global_figure_12.4
+- panel m: 
+  - data: 
+   - ensemble median: sfcWind_panel_m_ssp126_2081-2100_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_sfcWind_panel_m_ssp126_2081-2100_minus_baseline.nc
+  - figure: panel_m_wind_ssp126_2081-2100_80perc-agreement.[png/pdf]
+- panel n: 
+  - data: 
+   - ensemble median: sfcWind_panel_n_ssp585_2041-2060_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_sfcWind_panel_n_ssp585_2041-2060_minus_baseline.nc
+  - figure: panel_n_wind_ssp585_2041-2060_80perc-agreement.[png/pdf]
+- panel o: 
+  - data:
+   - ensemble median: sfcWind_panel_o_ssp585_2081-2100_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_sfcWind_panel_o_ssp585_2081-2100_minus_baseline.nc
+  - figure: panel_o_wind_ssp585_2081-2100_80perc-agreement.[png/pdf]
+- colorbar: wind_perc-baseline_colorbar.[png/pdf]
+
+**panels p, q, r**
+- script: https://github.com/IPCC-WG1/Chapter-12/blob/main/Figures/scripts/global_figure_12.4/ETWL_individual_figures.ipynb
+- final plotted data in directory: https://github.com/IPCC-WG1/Chapter-12/tree/main/Figures/data/Figure_12.4/ETWL
+- figures in directory: https://github.com/IPCC-WG1/Chapter-12/tree/main/Figures/figs/global_figure_12.4
+- panel p: 
+  - data: globalTWL_baseline.nc, globalTWL_RCP45.nc
+  - figure: panel_p_ESL_2100_RCP45-final.[png/pdf]
+- panel q: 
+  - data: globalTWL_baseline.nc, globalTWL_RCP85.nc
+  - figure: panel_q_ESL_2050_RCP85-final.[png/pdf]
+- panel r: 
+  - data: globalTWL_baseline.nc, globalTWL_RCP85.nc
+  - figure: panel_r_ESL_2100_RCP85-final.[png/pdf]
+- colorbar: ESL_colorbar.[png/pdf]
 
 
