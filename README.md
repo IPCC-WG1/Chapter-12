@@ -149,4 +149,5 @@ In this section I describe for each figure the scripts and data used to produce 
 [a link](https://github.com/IPCC-WG1/Chapter-12/blob/main/Figures/scripts/global_figure_12.4/ETWL_individual_figures.ipynb)
 
 [![Foo](https://github.com/IPCC-WG1/Chapter-12/blob/main/Figures/figs/global_figure_12.4/ESL_2100_RCP85.png)](https://github.com/IPCC-WG1/Chapter-12/blob/main/Figures/figs/global_figure_12.4/ESL_2100_RCP85.png)
-[![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.au/)
+
+<img src="https://github.com/IPCC-WG1/Chapter-12/blob/main/Figures/figs/global_figure_12.4/ESL_2100_RCP85.png" alt="alt text" title="image Title" height="150"/>
