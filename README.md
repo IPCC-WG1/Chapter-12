@@ -139,4 +139,8 @@ In this section I describe for each figure the scripts and data used to produce 
   - figure: panel_r_ESL_2100_RCP85-final.[png/pdf]
 - colorbar: ESL_colorbar.[png/pdf]
 
-
+|   |   |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
