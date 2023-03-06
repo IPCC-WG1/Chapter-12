@@ -3,36 +3,184 @@
 # -- Contact: jerome.servonnat at lsce.ipsl.fr
 # -----------------------------------------------------
 
+##########################################################################
+# ---------------------------------------------------------------------------------------------------------------------
+# In this README you will find the different steps to do IPCC AR6 WGI Figure 12.4
+# Creator: Jerome Servonnat - LSCE-IPSL
+# Contact: jerome.servonnat at lsce.ipsl.fr
+# Last updated on: March 6th, 2023
+# --------------------------------------------------------------------------------------------------------------------
+# The figures in the panels are produced individually. See the details below
+# They are put together in a multipanel plot with the python notebook Figure_12.4_multipanel.ipynb.
+# For each panel of the final figure, you will find below:
+#  - a short description of the climate indicator
+#  - the origin of the data
+#  - the final plotted data
+#  - and the python notebook to do the figure
+# ----------------------------------------------------------------------------------------------------
+# Information on the softwares used
+# - Softwares Versions:
+# 	- python 2.7
+# 	- CliMAF 1.2.13 (https://github.com/rigoudyg/climaf/tree/V1.2.13_JS_lastfix)
+# 	- ncl 6.6.2
+# 	- cdo 1.9.6
+# 	- nco 4.5.2
+# - Python packages of the used environment listed in Figures/scripts/env_list.txt
+#
+# - Operating System: Scientific Linux release 6.10 (Carbon)
+#  ----------------------------------------------------------------------------------------------------
+#
+#  License: Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/)
+#
+# ----------------------------------------------------------------------------------------------------
+# How to cite: 
+# When citing this code, please include both the code citation and the following citation for the related report component:
+########################################################################
+
+
+# -- Note 1: The paths provided below are relative to main root path: https://github.com/IPCC-WG1/Chapter-12/blob/main/Figures
+
+# -- Note 2: each notebook provided contains instructions to use it; they can reproduce the figures using the final plotted data.
+
+# -- Rotate_pdfs.ipynb
+# This notebook is used to rotate pdf files when needed
+
+# -- Description of the scripts, data and produced figures by line of plots in Figure 12.4
+# ----------------------------------------------------------------------------------------------------------
 
 # -- Panels (a), (b), (c)
 - tx35 bias corrected
 - data provided by Maialen Iturbide, ATLAS
-- figures made with tx35_individual_figures.ipynb
+- figures made with the python notebook: scripts/global_figure_12.4/tx35_individual_figures.ipynb
+- figures in directory: figs/global_figure_12.4
+- final plotted data in directory: data/Figure_12.4/tx35
+- panel a: 
+  - data:
+   - ensemble median: tx35_panel_a_ssp126_2081-2100_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_tx35_panel_a_ssp126_2081-2100_minus_baseline.nc
+  - figure: panel_a_tx35_ssp126_2081-2100_80perc-agreement.[png/pdf]
+- panel b: 
+  - data:
+   - ensemble median: tx35_panel_b_ssp585_2041-2060_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_tx35_panel_b_ssp585_2041-2060_minus_baseline.nc
+  - figure: panel_b_tx35_ssp585_2041-2060_80perc-agreement.[png/pdf]
+- panel c: 
+  - data:
+   - ensemble median: tx35_panel_c_ssp585_2081-2100_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_tx35_panel_c_ssp585_2081-2100_minus_baseline.nc
+  - figure: panel_c_tx35_ssp585_2081-2100_80perc-agreement.[png/pdf]
+- colorbar: tx35_colorbar.[png/pdf]
 
 # -- Panels (d), (e) and (f)
 - NOAA Heat Index above 41°C
 - data provided by Clemens Schwingshackl, CICERO (clemens.schwingshackl at cicero.oslo.no) and Carley Iles, CICERO (carley.iles at cicero.oslo.no)
-- figures made with HI_individual_figures.ipynb
+- figures made with the python notebook: scripts/global_figure_12.4/HI_individual_figures.ipynb
+- final plotted data in directory: data/Figure_12.4/HI41
+- figures in directory: figs/global_figure_12.4
+- panel d: 
+  - data:
+   - ensemble median: HI41_panel_d_ssp126_2081-2100_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_HI41_panel_d_ssp126_2081-2100_minus_baseline.nc
+  - figure: panel_d_HI41_ssp126_2081-2100_80perc-agreement.[png/pdf]
+- panel e: 
+  - data:
+   - ensemble median: HI41_panel_e_ssp585_2041-2060_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_HI41_panel_e_ssp585_2041-2060_minus_baseline.nc
+  - figure: panel_e_HI41_ssp585_2041-2060_80perc-agreement.[png/pdf] ; the suffix -final.pdf indicates a rotated pdf  
+- panel f: 
+  - data:
+   - ensemble median: tx35_panel_c_ssp585_2081-2100_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_HI41_panel_f_ssp585_2081-2100_minus_baseline.nc
+  - figure: panel_f_HI41_ssp585_2081-2100_80perc-agreement.[png/pdf]  ; the suffix -final.pdf indicates a rotated pdf
+- colorbar: HI41_colorbar.[png/pdf]
 
 # -- Panels (g), (h) and (i)
 - DF6 drought frequency index
 - data provided by Maialen Iturbide, ATLAS and Francesca Raffaele, ICTP (fraffael at ictp.it)
-- figures made with DF6_individual_figures.ipynb
+- figures made with the python notebook: scripts/global_figure_12.4/DF6_individual_figures.ipynb
+- final plotted data in directory: data/Figure_12.4/DF6
+- figures in directory: figs/global_figure_12.4
+- panel g: 
+  - data: 
+   - ensemble median: DF6_panel_g_ssp126_farch_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_DF6_panel_g_ssp126_farch_minus_baseline.nc
+  - figure: panel_g_DF6_ssp126_farch_80perc-agreement.[png/pdf]  ; the suffix -final.pdf indicates a rotated pdf
+- panel h: 
+  - data: 
+   - ensemble median: DF6_panel_h_ssp585_midch_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_DF6_panel_h_ssp585_midch_minus_baseline.nc
+  - figure: panel_h_DF6_ssp585_midch_80perc-agreement.[png/pdf]  ; the suffix -final.pdf indicates a rotated pdf
+- panel i: 
+  - data:
+   - ensemble median: DF6_panel_i_ssp585_farch_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_DF6_panel_i_ssp585_farch_minus_baseline.nc
+  - figure: panel_i_DF6_ssp585_farch_80perc-agreement.[png/pdf]  ; the suffix -final.pdf indicates a rotated pdf
+- colorbar: DF6_colorbar.[png/pdf]
 
 # -- Panels (j), (k) and (l)
 - Soil moisture, % of the baseline climatology
 - data provided by Mathias Hauser, ETH Zurich (mathias.hauser at env.ethz.ch)
-- figures made with SM_individual_figures.ipynb
+- figures made with the python notebook: scripts/global_figure_12.4/SM_individual_figures.ipynb
+- final plotted data in directory: data/Figure_12.4/SM
+- figures in directory: figs/global_figure_12.4
+- panel j: 
+  - data: 
+   - ensemble median: SM_panel_j_ssp126_2081-2100_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_SM_panel_j_ssp126_2081-2100_minus_baseline.nc
+  - figure: panel_j_mrso_ssp126_2081-2100_80perc-agreement.[png/pdf]  ; the suffix -final.pdf indicates a rotated pdf
+- panel k: 
+  - data: 
+   - ensemble median: SM_panel_k_ssp585_2041-2060_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_SM_panel_k_ssp585_2041-2060_minus_baseline.nc
+  - figure: panel_k_mrso_ssp585_2041-2060_80perc-agreement.[png/pdf]  ; the suffix -final.pdf indicates a rotated pdf
+- panel l: 
+  - data:
+   - ensemble median: SM_panel_l_ssp585_2081-2100_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_SM_panel_l_ssp585_2081-2100_minus_baseline.nc
+  - figure: panel_l_mrso_ssp585_2081-2100_80perc-agreement.[png/pdf]  ; the suffix -final.pdf indicates a rotated pdf
+- colorbar: SM_colorbar.[png/pdf]
 
 # -- Panels (m), (n) and (o)
 - Near-surface wind speed
 - data provided by Maialen Iturbide, ATLAS (miturbide at ifca.unican.es)
-- figures made with wind_individual_figures.ipynb
+- figures made with the python notebook: scripts/global_figure_12.4/wind_individual_figures.ipynb
+- final plotted data in directory: data/Figure_12.4/sfcWind
+- figures in directory: figs/global_figure_12.4
+- panel m: 
+  - data: 
+   - ensemble median: sfcWind_panel_m_ssp126_2081-2100_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_sfcWind_panel_m_ssp126_2081-2100_minus_baseline.nc
+  - figure: panel_m_wind_ssp126_2081-2100_80perc-agreement.[png/pdf]  ; the suffix -final.pdf indicates a rotated pdf
+- panel n: 
+  - data: 
+   - ensemble median: sfcWind_panel_n_ssp585_2041-2060_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_sfcWind_panel_n_ssp585_2041-2060_minus_baseline.nc
+  - figure: panel_n_wind_ssp585_2041-2060_80perc-agreement.[png/pdf]  ; the suffix -final.pdf indicates a rotated pdf
+- panel o: 
+  - data:
+   - ensemble median: sfcWind_panel_o_ssp585_2081-2100_minus_baseline.nc
+   - model agreement: mask_80perc-agreement_sfcWind_panel_o_ssp585_2081-2100_minus_baseline.nc
+  - figure: panel_o_wind_ssp585_2081-2100_80perc-agreement.[png/pdf]  ; the suffix -final.pdf indicates a rotated pdf
+- colorbar: wind_perc-baseline_colorbar.[png/pdf]
 
 # -- Panels (p), (q) and (r)
 - Extreme Total Water Level
 - data from Michalis Vousdoukas, Ec Europa (vousdoukas at gmail.com)
-- figures made with ETWL_individual_figures.ipynb, using ETWL_plot.py
+- figures made with the python notebook: scripts/global_figure_12.4/ETWL_individual_figures.ipynb, using scripts/global_figure_12.4/ETWL_plot.py
+- final plotted data in directory: data/Figure_12.4/ETWL
+- figures in directory: figs/global_figure_12.4
+- panel p: 
+  - data: globalTWL_baseline.nc, globalTWL_RCP45.nc
+  - figure: panel_p_ESL_2100_RCP45-final.[png/pdf]  ; the suffix -final.pdf indicates a rotated pdf
+- panel q: 
+  - data: globalTWL_baseline.nc, globalTWL_RCP85.nc
+  - figure: panel_q_ESL_2050_RCP85-final.[png/pdf]  ; the suffix -final.pdf indicates a rotated pdf
+- panel r: 
+  - data: globalTWL_baseline.nc, globalTWL_RCP85.nc
+  - figure: panel_r_ESL_2100_RCP85-final.[png/pdf]  ; the suffix -final.pdf indicates a rotated pdf
+- colorbar: ESL_colorbar.[png/pdf]
 
 
-The final 12.4 multiplot figure is assembled with Figure_12.4_multipanel.ipynb.
+The final 12.4 multiplot figure is assembled with scripts/global_figure_12.4/Figure_12.4_multipanel.ipynb.
+
+
