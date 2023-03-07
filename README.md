@@ -18,9 +18,9 @@ Author: Jerome Servonnat
 
 In the following section I present for each figure (identified in first column) the links to:
 - the figure (before final editing) (second column)
-- the main README, and the repositories to the code and the data (third column)
-- the code for each panel(s)
-- the figures of the individual panels
+- the main README (with explanations on how to produce the figures), and the repositories to the code and the data (third column)
+- the code for each panel(s) (fourth column)
+- the figures of the individual panels (fifth column)
 
 |Figure Number|Preview|How to produce the figure|Panels to code|Individual panels|
 |---|---|---|---|---|
