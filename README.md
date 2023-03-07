@@ -140,12 +140,10 @@ In this section I describe for each figure the scripts and data used to produce 
 - colorbar: ESL_colorbar.[png/pdf]
 
 |   |   |   |   |   |
-|---|---|---|---|---|
 |   |   |   |   |   |
 |   |   |   |   |   |
 |   |   |   |   |   |
 
 
-[a link](https://github.com/IPCC-WG1/Chapter-12/blob/main/Figures/scripts/global_figure_12.4/ETWL_individual_figures.ipynb)
-
-<img src="https://github.com/IPCC-WG1/Chapter-12/blob/main/Figures/figs/global_figure_12.4/figure_12.4.png" alt="alt text" title="image Title" height="150"/>
+|[Figure 12.4]([https://github.com/IPCC-WG1/Chapter-12/blob/main/Figures/scripts/global_figure_12.4/ETWL_individual_figures.ipynb](https://github.com/IPCC-WG1/Chapter-12/blob/main/Figures/scripts/global_figure_12.4/README_figure_12.4))
+<img src="https://github.com/IPCC-WG1/Chapter-12/blob/main/Figures/figs/global_figure_12.4/figure_12.4.png" alt="alt text" title="image Title" height="150"/>|
