@@ -1,0 +1,60 @@
+# -- Figure S12.6 of Chapter 12 IPCC AR6
+# -- Author: Jerome Servonnat
+# -- Contact: jerome.servonnat at lsce.ipsl.fr
+# -----------------------------------------------------
+##########################################################################
+### ---------------------------------------------------------------------------------------------------------------------
+### In this README you will find the different steps to do IPCC AR6 WGI Figure S12.6
+### Creator: Jerome Servonnat - LSCE-IPSL
+### Contact: jerome.servonnat at lsce.ipsl.fr
+### Last updated on: March 6th, 2023
+### --------------------------------------------------------------------------------------------------------------------
+### Information on the softwares used
+### - Softwares Versions:
+###       - python 2.7
+###       - CliMAF 1.2.13 (https://github.com/rigoudyg/climaf/tree/V1.2.13_JS_lastfix)
+###       - ncl 6.6.2
+###       - cdo 1.9.6
+###       - nco 4.5.2
+###       - R 3.6.3
+### - Python and R packages of the used conda environment listed in Figures/scripts/env_list.txt
+###
+### - Operating System: Scientific Linux release 6.10 (Carbon)
+###  ----------------------------------------------------------------------------------------------------
+###
+###  License: Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/)
+###
+### ----------------------------------------------------------------------------------------------------
+### How to cite:
+### When citing this code, please include both the code citation and the following citation for the related report component:
+### Ranasinghe, R., A.C. Ruane, R. Vautard, N. Arnell, E. Coppola, F.A. Cruz, S. Dessai, A.S. Islam, M. Rahimi, D. Ruiz Carrascal, J. Sillmann, M.B. Sylla, C. Tebaldi, W. Wang, and R. Zaaboul, 2021: Climate Change Information for Regional Impact and for Risk Assessment. In Climate Change 2021: The Physical Science Basis. Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Masson-Delmotte, V., P. Zhai, A. Pirani, S.L. Connors, C. Péan, S. Berger, N. Caud, Y. Chen, L. Goldfarb, M.I. Gomis, M. Huang, K. Leitzell, E. Lonnoy, J.B.R. Matthews, T.K. Maycock, T. Waterfield, O. Yelekçi, R. Yu, and B. Zhou (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA, pp. 1767–1926, doi: 10.1017/9781009157896.014.
+##########################################################################
+#
+## -- Note 1: The paths provided below are relative to main root path: https://github.com/IPCC-WG1/Chapter-12/blob/main/Figures
+##             ! if the path is not specified, the file is in the same directory as this README file
+
+# -- Presentation of the figure
+The figure S12.6 shows regional averages over the AR6 regions (land) for the Vousdoukas et al. 2018 and the Kirezci et al., 2020 datasets.
+The climate indicator is the extreme total water level for RCP4.5 and RCP8.5 for:
+  - recent past
+  - mid-term horizon
+  - long-term horizon
+
+# -- Step 1: computing the regional averages
+We compute the regional averages for the Vousdoukas et al. 2018 dataset with Compute_averages_AR6_regions_ETWL.ipynb
+They are stored in data/Figure_S12.6 in the json files: 
+  - Vousdoukas_ETWL_by_AR6_region_modern.json
+  - Vousdoukas_ETWL_by_AR6_region_RCP45_2050.json
+  - Vousdoukas_ETWL_by_AR6_region_RCP45_2100.json
+  - Vousdoukas_ETWL_by_AR6_region_RCP85_2050.json
+  - Vousdoukas_ETWL_by_AR6_region_RCP85_2100.json
+The regional averages for the Kirezci et al. 2020 dataset were already provided in Kirezci_ESL.csv
+
+
+# -- Step 2: do the figure
+We do figure S12.6 with the R notebook Barplots_ETWL.ipynb.
+It draws the panels for all the regions and do the multiplot figs/Satellite_barplots/Figure_S12.6_ETWL_satellite.[png,pdf]
+
+Some final editing is done after that (like adding the colored squares around the panels).
+
+

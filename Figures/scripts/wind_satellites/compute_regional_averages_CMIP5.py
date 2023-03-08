@@ -1,5 +1,8 @@
 from climaf.api import *
 
+CWD = os.getcwd()
+
+
 lom_per_exp = dict()
 
 req_dict = dict(project='CMIP5',
@@ -104,7 +107,7 @@ wind_ens_clim_exp_dict['baseline'] = clim_average(ens_baseline, 'ANM')
 # -- Get GWL for each model
 import csv
 
-GWL_csv = '/home/jservon/Chapter12_IPCC/scripts/ATLAS/warming-levels/CMIP5_Atlas_WarmingLevels.csv'
+GWL_csv = CWD+'/../../scripts/ATLAS/warming-levels/CMIP5_Atlas_WarmingLevels.csv'
 
 GWL_dict = dict()
 i = 0
@@ -397,7 +400,7 @@ for clim_period in regional_averages_diff_CMIP5:
 
 import json
 ensemble = 'CMIP5'
-outfilename = '/home/jservon/Chapter12_IPCC/data/wind_satellites/'+ensemble+'_sfcWind_diff-perc-baseline_AR6_regional_averages.json'
+outfilename = CWD+'/../../data/Figure_S12.5/'+ensemble+'_sfcWind_diff-perc-baseline_AR6_regional_averages.json'
 #print outfilename
 with open(outfilename, 'w') as fp:
     json.dump(quantiles_dict, fp, sort_keys=True, indent=4)

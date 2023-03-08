@@ -1,0 +1,58 @@
+# -- Figure S12.5 of Chapter 12 IPCC AR6
+# -- Author: Jerome Servonnat
+# -- Contact: jerome.servonnat at lsce.ipsl.fr
+# -----------------------------------------------------
+##########################################################################
+### ---------------------------------------------------------------------------------------------------------------------
+### In this README you will find the different steps to do IPCC AR6 WGI Figure S12.5
+### Creator: Jerome Servonnat - LSCE-IPSL
+### Contact: jerome.servonnat at lsce.ipsl.fr
+### Last updated on: March 6th, 2023
+### --------------------------------------------------------------------------------------------------------------------
+### Information on the softwares used
+### - Softwares Versions:
+###       - python 2.7
+###       - CliMAF 1.2.13 (https://github.com/rigoudyg/climaf/tree/V1.2.13_JS_lastfix)
+###       - ncl 6.6.2
+###       - cdo 1.9.6
+###       - nco 4.5.2
+###       - R 3.6.3
+### - Python and R packages of the used conda environment listed in Figures/scripts/env_list.txt
+###
+### - Operating System: Scientific Linux release 6.10 (Carbon)
+###  ----------------------------------------------------------------------------------------------------
+###
+###  License: Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/)
+###
+### ----------------------------------------------------------------------------------------------------
+### How to cite:
+### When citing this code, please include both the code citation and the following citation for the related report component:
+### Ranasinghe, R., A.C. Ruane, R. Vautard, N. Arnell, E. Coppola, F.A. Cruz, S. Dessai, A.S. Islam, M. Rahimi, D. Ruiz Carrascal, J. Sillmann, M.B. Sylla, C. Tebaldi, W. Wang, and R. Zaaboul, 2021: Climate Change Information for Regional Impact and for Risk Assessment. In Climate Change 2021: The Physical Science Basis. Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Masson-Delmotte, V., P. Zhai, A. Pirani, S.L. Connors, C. Péan, S. Berger, N. Caud, Y. Chen, L. Goldfarb, M.I. Gomis, M. Huang, K. Leitzell, E. Lonnoy, J.B.R. Matthews, T.K. Maycock, T. Waterfield, O. Yelekçi, R. Yu, and B. Zhou (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA, pp. 1767–1926, doi: 10.1017/9781009157896.014.
+##########################################################################
+#
+## -- Note 1: The paths provided below are relative to main root path: https://github.com/IPCC-WG1/Chapter-12/blob/main/Figures
+##             ! if the path is not specified, the file is in the same directory as this README file
+
+# -- Presentation of the figure
+The figure S12.5 shows regional averages over the AR6 regions (land) for the CMIP5, CMIP6 and CORDEX ensembles (median and 10/90th quantiles interval).
+The climate indicator is the change in annual mean wind speed, in percentage of the recent past reference period, on average over:
+  - mid-term horizon
+  - long-term horizon
+  - and the GWLs 1.5, 2 and 4K
+
+# -- Step 1: computing the regional averages
+We compute the regional averages for the different ensembles using:
+  - compute_regional_averages_CMIP5.py
+  - Prepare_time_slices_GWLs_wind_CMIP6.ipynb
+  - compute_regional_averages_CORDEX.py (
+The results are stored in json files in data/Figure_S12.5/[CMIP5,CMIP6,CORDEX]_sfcWind_diff-perc-baseline_AR6_regional_averages.json
+The csv files in data/Figure_S12.5/ are the metadata files.
+The notebooks CMIP5_metadata_file.ipynb and EURO_CORDEX_metadata_file.ipynb create the metadata files for CMIP5 and CORDEX
+
+# -- Step 2: do the figure
+We do figure S12.5 with the R notebook Quantile_plot_region.ipynb.
+It draws the panels for all the regions and do the multiplot figs/Satellite_barplots/Figure_S12.5_wind_satellite.[png,pdf]
+
+Some final editing is done after that (like adding the colored squares around the panels).
+
+

@@ -6,6 +6,8 @@ import numpy as np
 import json
 import glob
 
+CWD = os.getcwd()
+
 from climaf.api import *
 
 pattern = '/data/jservon/IPCC/tx35/bias_corrected/individual_models/CMIP5_${experiment}_${variable}_${period}_${member}.nc'
@@ -93,7 +95,7 @@ ens_exp_dict.pop('baseline_ext')
 
 import csv
 
-GWL_csv = '/home/jservon/Chapter12_IPCC/scripts/ATLAS/warming-levels/CMIP5_Atlas_WarmingLevels.csv'
+GWL_csv = CWD+'/../../scripts/ATLAS/warming-levels/CMIP5_Atlas_WarmingLevels.csv'
 
 GWL_dict = dict()
 i = 0
@@ -301,7 +303,7 @@ for clim_period in regional_averages:
 import json
 
 ensemble = 'CMIP5'
-outfilename = '/home/jservon/Chapter12_IPCC/data/Figure_S12.1/'+ensemble+'_tx35isimip_AR6_regional_averages.json'
+outfilename = CWD+'/../../data/Figure_S12.1/'+ensemble+'_tx35isimip_AR6_regional_averages.json'
 #print outfilename
 with open(outfilename, 'w') as fp:
     json.dump(quantiles_dict, fp, sort_keys=True, indent=4)

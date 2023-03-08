@@ -6,6 +6,9 @@ import numpy as np
 import json
 import glob
 
+CWD = os.getcwd()
+
+
 from climaf.api import *
 
 pattern = '/data/jservon/IPCC/wind/CORDEX_individual_models/CORDEX-${CORDEX_domain}_${experiment}_${variable}_${period}_${member}.nc'
@@ -121,7 +124,8 @@ for CORDEX_domain in CORDEX_domains:
 
 import csv
 
-GWL_csv = '/home/jservon/Chapter12_IPCC/scripts/ATLAS/warming-levels/CMIP5_Atlas_WarmingLevels.csv'
+GWL_csv = CWD+'/../../scripts/ATLAS/warming-levels/CMIP5_Atlas_WarmingLevels.csv'
+
 
 GWL_dict = dict()
 i = 0
@@ -407,7 +411,7 @@ for clim_period in regional_averages_diff:
 import json
 
 ensemble = 'CORDEX'
-outfilename = '/home/jservon/Chapter12_IPCC/data/Figure_S12.5/'+ensemble+'_sfcWind_diff-perc-baseline_AR6_regional_averages.json'
+outfilename = CWD+'/../../data/Figure_S12.5/'+ensemble+'_sfcWind_diff-perc-baseline_AR6_regional_averages.json'
 #print outfilename
 with open(outfilename, 'w') as fp:
     json.dump(quantiles_dict, fp, sort_keys=True, indent=4)
