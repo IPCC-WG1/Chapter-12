@@ -1,7 +1,5 @@
 # Chapter 12
 
-**!!! the repository will be updated on the 1st of March (the latest) ; it is currently cleaned (removing unnecessary files) and some notebooks are re-structured to be more understandable**
-
 ## Presentation of the repository
 This repository contains the code that has been used for a subset of Chapter 12 figures.
 
