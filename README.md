@@ -11,7 +11,7 @@ The files in the folder **HIcalculation** contain the scripts that were used to 
 
 The folder **snow** contains the code to compute SWE100 snow index.
 
-### Description of the content of the Figures folder
+## Description of the content of the Figures folder
 Author: Jerome Servonnat
 
 In the following section I present for each figure (identified in first column) the links to:
