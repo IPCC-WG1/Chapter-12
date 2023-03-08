@@ -2,23 +2,70 @@
 # -- Author: Jerome Servonnat
 # -- Contact: jerome.servonnat at lsce.ipsl.fr
 # -----------------------------------------------------
+##########################################################################
+### ---------------------------------------------------------------------------------------------------------------------
+### In this README you will find the different steps to do IPCC AR6 WGI Figure 12.8
+### Creator: Jerome Servonnat - LSCE-IPSL
+### Contact: jerome.servonnat at lsce.ipsl.fr
+### Last updated on: March 6th, 2023
+### --------------------------------------------------------------------------------------------------------------------
+### The figures in the panels are produced individually. See the details below
+### They are put together in a multipanel plot with the python notebook Figure_12.8_multipanel_SOUTH-AMERICA.ipynb
+### For each panel of the final figure, you will find below:
+###  - a short description of the climate indicator
+###  - the origin of the data
+###  - the final plotted data
+###  - and the python notebook to do the figure
+### ----------------------------------------------------------------------------------------------------
+### Information on the softwares used
+### - Softwares Versions:
+###       - python 2.7
+###       - CliMAF 1.2.13 (https://github.com/rigoudyg/climaf/tree/V1.2.13_JS_lastfix)
+###       - ncl 6.6.2
+###       - cdo 1.9.6
+###       - nco 4.5.2
+###       - R 3.6.3
+### - Python and R packages of the used conda environment listed in Figures/scripts/env_list.txt
+###
+### - Operating System: Scientific Linux release 6.10 (Carbon)
+###  ----------------------------------------------------------------------------------------------------
+###
+###  License: Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/)
+###
+### ----------------------------------------------------------------------------------------------------
+### How to cite:
+### When citing this code, please include both the code citation and the following citation for the related report component:
+### Ranasinghe, R., A.C. Ruane, R. Vautard, N. Arnell, E. Coppola, F.A. Cruz, S. Dessai, A.S. Islam, M. Rahimi, D. Ruiz Carrascal, J. Sillmann, M.B. Sylla, C. Tebaldi, W. Wang, and R. Zaaboul, 2021: Climate Change Information for Regional Impact and for Risk Assessment. In Climate Change 2021: The Physical Science Basis. Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Masson-Delmotte, V., P. Zhai, A. Pirani, S.L. Connors, C. Péan, S. Berger, N. Caud, Y. Chen, L. Goldfarb, M.I. Gomis, M. Huang, K. Leitzell, E. Lonnoy, J.B.R. Matthews, T.K. Maycock, T. Waterfield, O. Yelekçi, R. Yu, and B. Zhou (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA, pp. 1767–1926, doi: 10.1017/9781009157896.014.
+##########################################################################
+
+## -- Note 1: The paths provided below are relative to main root path: https://github.com/IPCC-WG1/Chapter-12/blob/main/Figures
+##             ! if the path is not specified, the file is in the same directory as this README file
 
 
 # -- Panel (a): Q100 map
 - Figure provided by Fabio Di Sante, ICTP (contact: fdi_sant at ictp.it)
+- 1:100yr return period stream flow by 2050 (RCP8.5 scenario)
+- data in data/Figure_12.8:
+  - Q100_map_panel_a_CAM_for_SAM_divdra.nc
+  - Q100_map_panel_a_SAM_divdra.nc
 
 # -- Panel (b): Shoreline position change, RCP8.5 2100
+- Shoreline position change, RCP8.5 2100
 - Data provided by Carley Iles, CICERO (carley.iles at cicero.oslo.no)
 - Figure made with CoastalRecession_map_AR6regions_SOUTH-AMERICA.ipynb
+- data in data/Figure_12.8: CoastalRecession_SOUTH-AMERICA_RCP85_2100.json
 
 # -- Panel (c): Q100 barplot
 - Data provided by Fabio Di Sante, ICTP
 - Figure made with Q100_Quantile_plot_region.ipynb
+- data in data/Figure_12.8:
+  - Q100_[CMIP5,CMIP6,CORDEX-core]: Raw values
+  - ../PERCENTILES_CHANGE_DIVDRA_ABSOLUTE/percentiles_[CMIP5,CMIP6,CORDEX-core]: Future changes
 
 # -- Panel (d): Shoreline position change barplots
 - data provided by Carley Iles, CICERO (carley.iles at cicero.oslo.no), Michalis Vousdoukas (vousdoukas at gmail.com) and Ebru Kirezci (ebrukirezci at gmail.com)
-- regional averages computed with: ../Coastal_recession_by_AR6_region
-/Compute_averages_AR6_regions_Coastal_recession.ipynb
+- regional averages computed with: ../Coastal_recession_by_AR6_region/Compute_averages_AR6_regions_Coastal_recession.ipynb
 - Figure made with Barplots_coastalrecession.ipynb
+- data in data/coastal_recession
 
 The final multiplot is assembled using Figure_12.8_multipanel_SOUTH-AMERICA.ipynb.
