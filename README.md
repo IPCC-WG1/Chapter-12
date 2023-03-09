@@ -1,4 +1,5 @@
 # Chapter 12
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7711675.svg)](https://doi.org/10.5281/zenodo.7711675)
 
 ## Presentation of the repository
 This repository contains the code that has been used for a subset of Chapter 12 figures.
